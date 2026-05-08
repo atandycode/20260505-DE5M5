@@ -27,7 +27,7 @@ class TestOperations(unittest.TestCase):
         total_rows = self.df_invalid_dataset.all(axis=1).sum()
         empty_rows = self.df_invalid_dataset.isna().all(axis=1).sum()
         
-        process_rows = DataSetCleaner.drop_empty_rows_from_df(self, self.df_invalid_dataset)
+        process_rows = self.Cleaner.drop_empty_rows_from_df(self, self.df_invalid_dataset)
 
         self.assertEqual(process_rows.all(axis=1).sum(), total_rows - empty_rows, "Total dropped rows don't match.")
 

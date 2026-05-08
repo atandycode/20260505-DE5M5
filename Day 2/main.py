@@ -18,12 +18,6 @@ class DataSetCleaner:
             'Customer Name': 'Name'
         }
 
-        # self.books_input = books_input
-        # self.books_output = books_output
-        # self.customers_input = customers_input
-        # self.customers_output = customers_output
-
-
     def open_csv_file_as_dataframe(self, file_loc):
         df = pd.read_csv(file_loc)
         return df
