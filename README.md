@@ -80,14 +80,14 @@ docker run -v $(pwd)/data:/app/data library-pipeline
 5. Open PowerBI and connect to the data folder
 
 ## Architecture
-![Architecture](docs/library_system_architecture.png)
+![Architecture](/library_system_architecture.png)
 
 User uploads CSV file via web based application hosted in a Docker container.
 Back end Docker container runs the ETL pipeline and outputs cleaned data.
 PowerBI connects to the output folder and presents the dashboard.
 
 ## Dashboard
-![PowerBI Dashboard](docs/demo_dashboard.png)
+![PowerBI Dashboard](/demo_dashboard.png)
 
 ## Risks & Issues
 | Risk | Impact | Mitigation |
